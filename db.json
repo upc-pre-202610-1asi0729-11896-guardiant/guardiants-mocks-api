@@ -1,98 +1,118 @@
 {
-  "categories": [
+  "vehicles": [
     {
-      "id": 1,
-      "name": "Java"
+      "id": "VEH-001",
+      "organizationId": "ORG-001",
+      "plate": "ABC-87521",
+      "brand": "Toyota",
+      "model": "Hilux",
+      "status": "BLOCKED",
+      "capacity": 1200,
+      "createdAt": "2026-01-15T10:30:00Z",
+      "lastLocation": "La Molina",
+      "lastUpdated": "10 sec",
+      "mileageKm": 18450,
+      "lastLat": -12.0864,
+      "lastLng": -76.9632,
+      "speedKmh": 42,
+      "batteryPct": 78,
+      "deviceStatus": "CONNECTED"
     },
     {
-      "id": 2,
-      "name": "Spring Boot"
+      "id": "VEH-002",
+      "organizationId": "ORG-001",
+      "plate": "XYZ-5678",
+      "brand": "Chevrolet",
+      "model": "N300",
+      "status": "ACTIVE",
+      "capacity": 800,
+      "createdAt": "2026-02-20T14:45:00Z",
+      "lastLocation": "San Isidro",
+      "lastUpdated": "2 min",
+      "mileageKm": 20310,
+      "lastLat": -12.0974,
+      "lastLng": -77.0362,
+      "speedKmh": 28,
+      "batteryPct": 64,
+      "deviceStatus": "CONNECTED"
     },
     {
-      "id": 3,
-      "name": "TypeScript"
+      "id": "VEH-003",
+      "organizationId": "ORG-001",
+      "plate": "LMN-9012",
+      "brand": "Hino",
+      "model": "500 Series",
+      "status": "MAINTENANCE",
+      "capacity": 2000,
+      "createdAt": "2026-03-10T08:15:00Z",
+      "lastLocation": "Miraflores",
+      "lastUpdated": "1 hour",
+      "mileageKm": 23110,
+      "lastLat": -12.1203,
+      "lastLng": -77.0308,
+      "speedKmh": 0,
+      "batteryPct": 52,
+      "deviceStatus": "IDLE"
     },
     {
-      "id": 4,
-      "name": "Angular"
-    },
-    {
-      "id": 5,
-      "name": "RESTful"
+      "id": "VEH-004",
+      "organizationId": "ORG-001",
+      "plate": "PQR-3456",
+      "brand": "Hyundai",
+      "model": "HD65",
+      "status": "ACTIVE",
+      "capacity": 1500,
+      "createdAt": "2026-03-25T11:20:00Z",
+      "lastLocation": "Surco",
+      "lastUpdated": "30 sec",
+      "mileageKm": 15780,
+      "lastLat": -12.1138,
+      "lastLng": -76.9907,
+      "speedKmh": 36,
+      "batteryPct": 88,
+      "deviceStatus": "CONNECTED"
     }
   ],
-  "courses": [
+  "alerts": [
     {
-      "id": 1,
-      "title": "Java for Beginners",
-      "description": "An introductory course to Java programming language.",
-      "categoryId": 1
+      "id": "a1",
+      "organizationId": "ORG-001",
+      "vehicleId": "VEH-001",
+      "ruleId": "RULE-001",
+      "type": "SUSPICIOUS_MOVEMENT",
+      "severity": "HIGH",
+      "status": "READ",
+      "description": "Movement detected outside route",
+      "location": "Av. Javier Prado 1234, Lima",
+      "detail": "Vehicle moved outside scheduled hours",
+      "createdAt": "2026-05-13T10:30:00.000Z"
     },
     {
-      "id": 2,
-      "title": "Advanced Java Concepts",
-      "description": "A deep dive into advanced Java programming topics.",
-      "categoryId": 1
+      "id": "a2",
+      "organizationId": "ORG-001",
+      "vehicleId": "VEH-003",
+      "ruleId": "RULE-002",
+      "type": "TAMPERED_GPS",
+      "severity": "MEDIUM",
+      "status": "UNREAD",
+      "description": "GPS signal interrupted",
+      "location": "Av. La Marina 567, Lima",
+      "detail": "Device reported unstable GPS readings",
+      "createdAt": "2026-05-13T09:15:00.000Z"
     },
     {
-      "id": 3,
-      "title": "Spring Boot Fundamentals",
-      "description": "Learn the basics of Spring Boot framework.",
-      "categoryId": 2
-    },
-    {
-      "id": 4,
-      "title": "Building RESTful APIs with Spring Boot",
-      "description": "Create robust RESTful APIs using Spring Boot.",
-      "categoryId": 2
-    },
-    {
-      "id": 5,
-      "title": "TypeScript Essentials",
-      "description": "Get started with TypeScript and its features.",
-      "categoryId": 3
-    },
-    {
-      "id": 6,
-      "title": "Advanced TypeScript",
-      "description": "Explore advanced concepts in TypeScript programming.",
-      "categoryId": 3
-    },
-    {
-      "id": 7,
-      "title": "Angular for Beginners",
-      "description": "An introductory course to Angular framework.",
-      "categoryId": 4
-    },
-    {
-      "id": 8,
-      "title": "Building SPAs with Angular",
-      "description": "Learn how to build Single Page Applications using Angular.",
-      "categoryId": 4
-    },
-    {
-      "id": 9,
-      "title": "RESTful Web Services",
-      "description": "Understand the principles of RESTful web services.",
-      "categoryId": 5
-    },
-    {
-      "id": 10,
-      "title": "Consuming RESTful APIs",
-      "description": "Learn how to consume RESTful APIs in your applications.",
-      "categoryId": 5
-    },
-    {
-      "id": 11,
-      "title": "Full-Stack Development with Java and Angular",
-      "description": "Combine Java backend with Angular frontend for full-stack development.",
-      "categoryId": 1
-    },
-    {
-      "id": 12,
-      "title": "Microservices with Spring Boot",
-      "description": "Build microservices architecture using Spring Boot.",
-      "categoryId": 2
+      "id": "a3",
+      "organizationId": "ORG-001",
+      "vehicleId": "VEH-004",
+      "ruleId": "RULE-003",
+      "type": "GEOFENCE_BREACH",
+      "severity": "LOW",
+      "status": "READ",
+      "description": "Vehicle left allowed area",
+      "location": "Panamericana Norte Km 23",
+      "detail": "Vehicle exited designated zone",
+      "createdAt": "2026-05-13T08:00:00.000Z"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
